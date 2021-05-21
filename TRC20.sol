@@ -43,7 +43,7 @@ library SafeMath {
 //**************************************************************************//  
 
 
-contract TRC20Token {
+contract TitaniumContract {
 
     using SafeMath for uint256;
 
@@ -76,10 +76,10 @@ contract TRC20Token {
     );
 
     constructor() public {
-        _name = "Token Name";
-        _symbol = "SYMBOL";
-        _decimals = 6;
-        _initialSupply = 35000000;
+        _name = "Titanium";
+        _symbol = "TNM";
+        _decimals = 5;
+        _initialSupply = 21000000;
         _totalSupply = _initialSupply * 10**uint256(_decimals);
         _balances[msg.sender] = _totalSupply;
         owner = msg.sender;
